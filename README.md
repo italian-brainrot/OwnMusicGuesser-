@@ -1,5 +1,7 @@
 # Italian Brainrots Own Music Guesser!
 
+How well do you know your music library? Guess which song is playing, with start time randomized!
+
 ### How to use
 You should run OwnMusicGuesser.bat and also you should istall all libraries that it uses or it wont work. 
 
