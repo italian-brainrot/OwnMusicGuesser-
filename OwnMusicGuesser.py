@@ -157,7 +157,8 @@ def big_chungus(what):
             stunlock = tk.Label(text=str(winstreak)+'       \n'+str(winstreakmax)+'     ', justify='left', font=("Segoe UI", bigounce))
             stunlock.grid(row=3*idkmium-idkmium+1,rowspan=idkmium, column=peopleobserver+1, sticky='w')
             #score.grid_remove()
-            sound.stop()
+            try:sound.stop()
+            except:pass
             #print('thats right!!!') 
             for i in range(int(keepmalding)):
                 choice[i].grid_forget()
