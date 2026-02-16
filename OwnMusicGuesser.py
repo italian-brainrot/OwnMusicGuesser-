@@ -196,7 +196,7 @@ def folderget():
     global folder, fcount,jesust
     a=0
     if sussyamongus==69:
-        sussyamongus=68
+        sussyamongus=67
         if not os.path.exists('OwnMusicGuesserData.txt'):
             return
         else:
@@ -210,10 +210,14 @@ def folderget():
             with open('OwnMusicGuesserData.txt', 'w') as bigounce:bigounce.write(f'{folder}<|>1')
             jesust=int(1)
         else:
-            with open('OwnMusicGuesserData.txt', 'r+') as bigounce:
-                akak=bigounce.read()
-                jesust=int(akak.split('<|>')[1])
-                folder= akak.split('<|>')[0]
+            if sussyamongus == 69:
+                with open('OwnMusicGuesserData.txt', 'r+') as bigounce:
+                    akak=bigounce.read()
+                    jesust=int(akak.split('<|>')[1])
+                    folder= akak.split('<|>')[0]
+            else:
+                with open('OwnMusicGuesserData.txt', 'w') as bigounce:bigounce.write(f'{folder}<|>1')
+                jesust=int(1)
 
     foldertext = tk.Label(text=folder +' - ')
     foldertext.grid(row=50, column=1, sticky="ew") #ew linus towald ew linus towald ew linus towald
